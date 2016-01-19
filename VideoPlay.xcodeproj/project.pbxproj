@@ -15,6 +15,8 @@
 		3A23C9BE1C4E103100D55178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A23C9BC1C4E103100D55178 /* LaunchScreen.storyboard */; };
 		3A23C9C91C4E103100D55178 /* VideoPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A23C9C81C4E103100D55178 /* VideoPlayTests.m */; };
 		3A23C9D41C4E103100D55178 /* VideoPlayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A23C9D31C4E103100D55178 /* VideoPlayUITests.m */; };
+		3A23C9E71C4E196E00D55178 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A23C9E61C4E196E00D55178 /* AVFoundation.framework */; };
+		3A23C9E91C4E197400D55178 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A23C9E81C4E197400D55178 /* AVKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		3A23C9CF1C4E103100D55178 /* VideoPlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoPlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A23C9D31C4E103100D55178 /* VideoPlayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayUITests.m; sourceTree = "<group>"; };
 		3A23C9D51C4E103100D55178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A23C9E61C4E196E00D55178 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3A23C9E81C4E197400D55178 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A23C9E91C4E197400D55178 /* AVKit.framework in Frameworks */,
+				3A23C9E71C4E196E00D55178 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +123,8 @@
 		3A23C9AE1C4E103100D55178 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3A23C9E81C4E197400D55178 /* AVKit.framework */,
+				3A23C9E61C4E196E00D55178 /* AVFoundation.framework */,
 				3A23C9AF1C4E103100D55178 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -413,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = VideoPlay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BieZhi.VideoPlay;
@@ -424,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = VideoPlay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BieZhi.VideoPlay;
@@ -498,6 +508,7 @@
 				3A23C9DA1C4E103100D55178 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A23C9DB1C4E103100D55178 /* Build configuration list for PBXNativeTarget "VideoPlayTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +517,7 @@
 				3A23C9DD1C4E103100D55178 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A23C9DE1C4E103100D55178 /* Build configuration list for PBXNativeTarget "VideoPlayUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +526,7 @@
 				3A23C9E01C4E103100D55178 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
